@@ -34,7 +34,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="16dp"/>
 
-    <!-- 第一行按钮 -->
+    <!-- 输入值显示 -->
     <TextView
         android:id="@+id/inputValue"
         android:layout_width="0dp"
@@ -53,6 +53,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/inputLabel" />
 
+    <!-- 第一行按钮 -->
     <Button
         android:id="@+id/btn7"
         android:layout_width="0dp"
@@ -215,6 +216,61 @@
         app:layout_constraintLeft_toRightOf="@id/btn3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/btn1"
+        android:layout_marginRight="16dp"/>
+
+    <!-- 第四行按钮（新增的一行） -->
+    <Button
+        android:id="@+id/btnDot"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="."
+        android:textSize="18sp"
+        android:background="#F5F5F5"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn0"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"/>
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:background="#F5F5F5"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toRightOf="@id/btnDot"
+        app:layout_constraintRight_toLeftOf="@id/btnEqual"
+        app:layout_constraintTop_toTopOf="@id/btnDot"
+        android:layout_marginRight="8dp"/>
+
+    <Button
+        android:id="@+id/btnEqual"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="="
+        android:textSize="18sp"
+        android:background="#FFC107"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toRightOf="@id/btn0"
+        app:layout_constraintRight_toLeftOf="@id/btnMinus"
+        app:layout_constraintTop_toTopOf="@id/btnDot"
+        android:layout_marginRight="8dp"/>
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="-"
+        android:textSize="18sp"
+        android:background="#FFC107"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toRightOf="@id/btnEqual"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnDot"
         android:layout_marginRight="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
